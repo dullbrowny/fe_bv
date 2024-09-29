@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaarvoice Conversations API</title>
+</head>
+<body>
+    <h1>Bazaarvoice Conversations API Frontend</h1>
+
+    <h2>Get Review Preview</h2>
+    <form action="/cv2/reviewpreview" method="get">
+        <label for="product_id">Product ID:</label>
+        <input type="text" id="product_id" name="product_id">
+        <button type="submit">Fetch Review Preview</button>
+    </form>
+
+    <h2>Get Review Statistics</h2>
+    <form action="/cv2/reviewstats" method="get">
+        <label for="product_id">Product ID:</label>
+        <input type="text" id="product_id" name="product_id">
+        <button type="submit">Fetch Review Statistics</button>
+    </form>
+
+    <h2>Submit Review</h2>
+    <form action="/cv2/reviewsubmit" method="post">
+        <label for="product_id">Product ID:</label>
+        <input type="text" id="product_id" name="product_id">
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5">
+        <label for="text">Review Text:</label>
+        <textarea id="text" name="text"></textarea>
+        <button type="submit">Submit Review</button>
+    </form>
+</body>
+</html>
